@@ -1,0 +1,104 @@
+.spotify-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 10px;
+  }
+  
+  .spotify-form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .form-group {
+    flex-basis: 48%;
+  }
+  
+  .form-heading {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .custom-label {
+    display: block;
+    margin-bottom: 8px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    color: #FA4B4B;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .form-input:focus {
+    outline: none;
+  }
+  
+  .form-submit {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #fff;
+    color: #FA4B4B;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-submit:hover {
+    background-color: #EE3F3F;
+    color: #fff;
+  }
+  
+  .file-input input[type=file]::-webkit-file-upload-button {
+    visibility: hidden;
+    width: 0;
+  }
+  
+  .file-input input[type=file]::before {
+    content: 'Choose a file';
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #fff;
+    color: #FA4B4B;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .file-input input[type=file]:hover::before {
+    background-color: #EE3F3F;
+    color: #fff;
+  }
+  
+  .file-input input[type=file]:active::before {
+    background-color: #d83939;
+    color: #fff;
+  }
+  
+  .file-input input[type=file]:focus::before {
+    outline: none;
+    box-shadow: 0 0 3px 3px rgba(250, 75, 75, 0.3);
+  }
+  

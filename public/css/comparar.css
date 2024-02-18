@@ -1,0 +1,301 @@
+
+:root{
+  --red:#FA4B4B ;
+
+}
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline:  none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+*::selection{
+    background: var(--red);
+    color: #333;
+}
+
+html{
+    font-size: 62.5%;
+    overflow: hidden;
+}
+
+
+html::-webkit-scrollbar{
+    width: 1.4rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: #222;
+}
+
+html::-webkit-scrollbar-thumb{
+    background:var(--red);
+}
+
+body{
+    background:black;
+    overflow: hidden;
+    padding-left: 35rem;
+}
+
+section{
+    min-height: 100vh;
+    padding: 1rem;
+    
+}
+
+.btn{
+    padding: .7rem 3rem;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+
+
+.btn i{
+    padding: 0 .5rem;
+    font-size: 1.8rem;
+}
+
+.btn:hover{
+    background: #FF5733 ;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 83%;
+    width: 21rem;
+    background: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+
+
+
+header .user img{
+height: 10rem;
+width: 10rem;
+border-radius: 50%;
+object-fit: cover;
+margin-bottom: 1rem;
+border: .7rem solid red; 
+}
+
+
+header .user .name{
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+
+
+header .user .email{
+    font-size: 2rem;
+    color: #eee;
+}
+header .user .phone{
+    font-size: 2rem;
+    color: #eee;
+}
+
+.songs .edit{
+
+
+    font-size: 2rem;
+    color:#D51F10;
+   
+}
+
+.create{
+  width: 100%;
+  height: 100px;
+  background:#FA4B4B ;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 2em;
+  color: #fff;
+  font-weight: 600;
+}
+
+.spotify-button {
+  display: inline-block;
+  border: none;
+  border-radius: 30px;
+  background-color: #FA4B4B; /* update background color */
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.spotify-button:hover {
+  background-color: #EE3F3F; /* update hover background color */
+}
+
+a {
+  color: white;
+}
+
+.redirect-row:hover {
+  cursor: pointer;
+}
+
+
+header .navbar .logout{
+    font-size: 3rem;
+    color:#B41C10 ;
+   
+}
+
+header .navbar{
+width: 100%;
+
+}
+
+header .navbar ul{
+list-style: none;
+    padding: 1rem 3rem;
+}
+
+
+header .navbar ul li a{
+ display:block;
+ padding: 1rem;
+ margin: 1rem 0;
+ background: #333;
+ color: #fff;
+ font-size: 2rem;
+ border-radius: 5rem;
+
+}
+
+header .navbar ul li a:hover{
+    background: #FA4B4B ;
+}
+
+.songs{
+
+ margin-top: 50px;
+ text-align: right;
+    /* flex-flow: column; */
+    padding:0 30rem;
+    color: #fff;
+    
+}
+
+.songs h2{ 
+  margin-top: 50px;
+    font-size: 4rem;
+    color: #636363;
+}
+
+.songs h1{
+  
+  font-size: 2rem;
+  color: #cccccc;
+}
+
+table {
+  width: 83%;
+  background-color: rgba(168, 168, 168, 0.021);
+  color: white;
+  border-collapse: collapse;
+  font-size: 13px;
+  position: relative;
+  z-index: 1;
+  margin-right: 15px;
+}
+
+.container {
+  height: 358px; /* altura máxima del contenedor */
+  overflow-y: scroll; /* habilita la barra de desplazamiento vertical */
+  margin-right: -275px;
+  margin-left: -60px;
+  padding-right: 1px;
+  color: pink;
+
+}
+
+.table-wrapper table {
+  background-color: rgba(188, 127, 127, 0.048);
+  color: white;
+  border-collapse: collapse;
+  font-size: 13px;
+  width: calc(100% - 1px); /* ajusta el ancho de la tabla para compensar el padding-right del contenedor */
+}
+
+.container::-webkit-scrollbar {
+  width: 10px;
+  background-color: black;  /* color del fondo del scrollbar */
+}
+
+.container::-webkit-scrollbar-thumb {
+  background-color: black; /* color de la barra del scrollbar */
+  border-radius: 5px;
+}
+
+
+.btnplus{
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+}
+
+.btnlike{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+
+th, td {
+  padding: 5px;
+  text-align: left;
+  border-bottom: 1px solid rgb(63, 32, 32);
+}
+
+th {
+  background-color: rgba(0, 0, 0, 0.598);
+  color: white;
+}
+
+tr:hover {
+  background-color: rgba(255, 255, 255, 0.064);
+}
+
+button.audio-control {
+  background-color: transparent;
+  border: none;
+}
+
+button.audio-control img {
+  width: 20px;
+  height: 20px;
+}
+
+form {
+  display: inline-block;
+  
+}

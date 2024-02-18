@@ -1,0 +1,31 @@
+/* Spotify-inspired table style */
+table {
+    font-family: "Montserrat", sans-serif; /* updated font-family */
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+th {
+    background-color: #fa4d6f; /* updated header color */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: left;
+}
+
+td {
+    padding: 10px;
+    /* removed border */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ff8e82; /* lighter red on hover */
+    color: white;
+}

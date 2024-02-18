@@ -1,0 +1,22 @@
+.button-container {
+  display: flex;
+  justify-content: center; /* horizontally center the contents */
+}
+
+.spotify-button {
+  display: inline-block;
+  border: none;
+  border-radius: 30px;
+  background-color: #FA4B4B;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.spotify-button:hover {
+  background-color: #EE3F3F;
+}
